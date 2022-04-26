@@ -1,0 +1,336 @@
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ GENERALES ------------------------------ */
+/* ------------------------------------------------------------------------- */
+:root {
+    --background-gradient1: #536976;
+    --background-gradient2: #292E49;
+    --blanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--background-gradient1), var(--background-gradient2));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--background-gradient1), var(--background-gradient2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--blanco);
+    font-family: 'Montserrat', 'Arial';
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+button {
+    background: none;
+    border: none;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ HEADER ------------------------------ */
+/* ------------------------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+header a img {
+    width: 2.6rem;
+}
+
+header .icon-menu {
+    padding-left: 2rem;
+}
+
+header .icon-youtube {
+    padding-right: 2rem;
+}
+
+header .texto-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .texto-header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+header .texto-header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ MAIN ------------------------------ */
+/* ------------------------------------------------------------------------- */
+main {
+    width: 100%;
+    height: auto;
+}
+
+main .illustration-data-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 14rem;
+}
+
+/* ------------------------------ FORM ------------------------------ */
+main .illustration-data-container form {
+    min-width: 27rem;
+    height: 10rem;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/assets/svg/illustration-triangulo-oblicuangulo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main .illustration-data-container form input {
+    position: absolute;
+    width: 3rem;
+    background: none;
+    border: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+main .illustration-data-container form #angulo-a {
+    left: -3rem;
+    bottom: 0rem;
+}
+
+main .illustration-data-container form #angulo-b {
+    right: -4rem;
+    bottom: 0rem;
+}
+
+main .illustration-data-container form #angulo-c {
+    left: 7rem;
+    top: -2rem;
+}
+
+main .illustration-data-container form #cateto-a {
+    right: 7rem;
+    bottom: 6rem;
+}
+
+main .illustration-data-container form #cateto-b {
+    left: 1.5rem;
+    bottom: 5.5rem;
+}
+
+main .illustration-data-container form #cateto-c {
+    left: 11.5rem;
+    bottom: -2rem;
+}
+
+
+main .illustration-data-container .botones {
+    position: absolute;
+    bottom: -7rem;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .illustration-data-container .botones .calcular {
+    width: 12rem;
+    background-color: var(--blanco);
+    color: var(--background-gradient2);
+    border-radius: 1.2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .illustration-data-container .botones .refresh {
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ DATOS-CONTAINER ------------------------------ */
+/* ------------------------------------------------------------------------- */
+.datos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    
+}
+
+.datos-container .datos-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+}
+
+.datos-container .datos-result-container {
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: space;
+}
+
+.datos-container .datos-result-container .angulos-container {
+    width: 30%;
+}
+
+.datos-container .datos-result-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.datos-container .datos-result-container p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 1.2rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ----------------------- ILLUSTRATION RESULT CONTAINER ----------------------- */
+/* ------------------------------------------------------------------------- */
+.illustration-result-container {
+    width: 100%;
+    height: 20rem;
+}
+
+.illustration-result-container .illustration-result {
+    min-width: 27rem;
+    width: 27rem;
+    height: 10rem;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/assets/svg/illustration-triangulo-oblicuangulo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.illustration-result-container .illustration-result div {
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+
+.illustration-result-container .illustration-result .angulo-a {
+    left: -2.5rem;
+    bottom: 0rem;
+}
+
+.illustration-result-container .illustration-result .angulo-b {
+    right: -2rem;
+    bottom: 0rem;
+}
+
+.illustration-result-container .illustration-result .angulo-c {
+    left: 7rem;
+    top: -2rem;
+}
+
+.illustration-result-container .illustration-result .cateto-a {
+    right: 7rem;
+    bottom: 6rem;
+}
+
+.illustration-result-container .illustration-result .cateto-b {
+    left: 1.5rem;
+    bottom: 5.5rem;
+}
+
+.illustration-result-container .illustration-result .cateto-c {
+    left: 11.5rem;
+    bottom: -2rem;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ FOOTER ------------------------------ */
+/* ------------------------------------------------------------------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+} 
+
+footer .footer-credit {
+    color: var(--background-gradient1);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+footer span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer .icons {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--background-gradient1);
+}
+
+footer .icons a:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
