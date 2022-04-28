@@ -8,7 +8,6 @@ let catetoA = document.getElementById('cateto-a');
 let catetoB = document.getElementById('cateto-b');
 let catetoC = document.getElementById('cateto-c');
 
-const form = document.querySelector('form'); 
 
 const ilustracionAnguloA = document.querySelector('.angulo-a');
 const ilustracionAnguloB = document.querySelector('.angulo-b');
@@ -17,7 +16,9 @@ const ilustracionCatetoA = document.querySelector('.cateto-a');
 const ilustracionCatetoB = document.querySelector('.cateto-b');
 const ilustracionCatetoC = document.querySelector('.cateto-c');
 
+const form = document.querySelector('form'); 
 const reset = document.querySelector('.refresh');
+const calcular = document.querySelector('.calcular');
 
 
 const datoAnguloA = document.querySelector('.data-angulo-a');
@@ -114,10 +115,19 @@ form.addEventListener('keyup', ()=> {
 })
 
 
-reset.addEventListener('click', e =>{
+reset.addEventListener('click', () =>{
     resetHTML();
 })
 
+
+// EVENTOS DE ESTILOS
+calcular.addEventListener('mouseover', e =>{
+    e.target.style.transform = "scale(1.3)";
+})
+
+calcular.addEventListener('mouseout', e =>{  
+    e.target.style.transform = "scale(1)";
+})
 
 
 
@@ -163,11 +173,7 @@ const resolverTriangulo = ()=> {
             }
         }
 
-        // FALTAN VALIDAR SI ESTAN ACTIVOS
-        
         if ( a > 0 && b > 0 && c > 0 ) {
-            console.log('Imprimiendo desde condicional angulos');
-
             resolverAnguloA();
             resolverAnguloB();
             resolverAnguloC();
@@ -381,3 +387,6 @@ const resetHTML = ()=> {
         }
     }
 }
+
+
+    

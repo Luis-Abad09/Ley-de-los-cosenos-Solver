@@ -1,0 +1,84 @@
+@media screen and (min-width: 1000px) {
+
+    body {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ HEADER ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    header {
+        margin-bottom: 12rem;
+    }
+    
+    header .texto-header p {
+        font-size: 1.5rem;
+    }
+    
+    header .texto-header h1 {
+        font-size: 3rem;
+    }
+
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ MAIN ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    main .illustration-data-container {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 14rem;
+    }
+
+    main .datos-illustration-container {
+        width: 50%;
+    }
+
+
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ DATOS-CONTAINER ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    .datos-container {
+        margin-bottom: 9rem;
+    }
+
+    .datos-container .datos-title {
+        font-size: 2.3rem;
+    }
+
+    .datos-container .datos-result-container {
+        width: 40rem;
+    }
+
+    .datos-container .datos-result-container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .datos-container .datos-result-container p {
+        font-size: 1.35rem;
+        padding-top: 1.35rem;
+    }
+
+
+    /* ------------------------------------------------------------------------- */
+    /* ----------------------- ILLUSTRATION RESULT CONTAINER ----------------------- */
+    /* ------------------------------------------------------------------------- */
+    .illustration-result-container {
+        margin-bottom: 6rem;
+    }
+
+    .illustration-result-container .illustration-result {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+}

@@ -1,0 +1,141 @@
+@media screen and (min-width: 600px) {
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ HEADER ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    header .texto-header p {
+        font-size: 1.4rem;
+    }
+    
+    header .texto-header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ MAIN ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    main .illustration-data-container {
+        margin-bottom: 18rem;
+    }
+
+    /* ------------------------------ FORM ------------------------------ */
+    main .illustration-data-container form {
+        min-width: 40rem;
+        height: 20rem;
+    }
+
+    main .illustration-data-container form input {
+        width: 4.5rem;
+        font-size: 1.7rem;
+    }
+
+    main .illustration-data-container form #angulo-a {
+        left: -5rem;
+        bottom: 3rem;
+    }
+    
+    main .illustration-data-container form #angulo-b {
+        right: -6rem;
+        bottom: 3rem;
+    }
+    
+    main .illustration-data-container form #angulo-c {
+        left: 10rem;
+        top: 0rem;
+    }
+    
+    main .illustration-data-container form #cateto-a {
+        right: 10rem;
+        bottom: 12rem;
+    }
+    
+    main .illustration-data-container form #cateto-b {
+        left: 1rem;
+        bottom: 10.5rem;
+    }
+    
+    main .illustration-data-container form #cateto-c {
+        left: 16rem;
+        bottom: 0rem;
+    }
+
+    main .illustration-data-container .botones {
+        bottom: -9rem;
+        height: 3.5rem;
+    }
+
+    main .illustration-data-container .botones .calcular {
+        width: 15rem;
+        margin-right: 2rem;
+        font-size: 1.4rem;
+    }
+    
+    main .illustration-data-container .botones .refresh img{
+        width: 3.2rem;
+    }
+
+
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------------ DATOS-CONTAINER ------------------------------ */
+    /* ------------------------------------------------------------------------- */
+    .datos-container .datos-title {
+        font-size: 2.3rem;
+    }
+
+    .datos-container .datos-result-container {
+        width: 40rem;
+    }
+
+    .datos-container .datos-result-container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .datos-container .datos-result-container p {
+        font-size: 1.35rem;
+        padding-top: 1.35rem;
+    }
+
+
+    /* ------------------------------------------------------------------------- */
+    /* ----------------------- ILLUSTRATION RESULT CONTAINER ----------------------- */
+    /* ------------------------------------------------------------------------- */
+    .illustration-result-container {
+        margin-bottom: 6rem;
+    }
+
+    .illustration-result-container .illustration-result {
+        min-width: 40rem;
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .illustration-result-container .illustration-result .angulo-a {
+        left: -5rem;
+        bottom: 3.5rem;
+    }
+    
+    .illustration-result-container .illustration-result .angulo-b {
+        right: -5rem;
+        bottom: 3.5rem;
+    }
+    
+    .illustration-result-container .illustration-result .angulo-c {
+        left: 9rem;
+        top: 1rem;
+    }
+    
+    .illustration-result-container .illustration-result .cateto-a {
+        right: 11rem;
+        bottom: 12rem;
+    }
+    
+    .illustration-result-container .illustration-result .cateto-b {
+        left: 0rem;
+        bottom: 11rem;
+    }
+    
+    .illustration-result-container .illustration-result .cateto-c {
+        left: 15rem;
+        bottom: 0rem;
+    }
+
+}
