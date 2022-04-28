@@ -121,7 +121,7 @@ main .illustration-data-container form {
 
 main .illustration-data-container form input {
     position: absolute;
-    width: 3rem;
+    width: 4.5rem;
     background: none;
     border: none;
     color: var(--blanco);
@@ -134,7 +134,7 @@ main .illustration-data-container form #angulo-a {
 }
 
 main .illustration-data-container form #angulo-b {
-    right: -4rem;
+    right: -5.5rem;
     bottom: 0rem;
 }
 
@@ -144,7 +144,7 @@ main .illustration-data-container form #angulo-c {
 }
 
 main .illustration-data-container form #cateto-a {
-    right: 7rem;
+    right: 5rem;
     bottom: 6rem;
 }
 
@@ -177,6 +177,10 @@ main .illustration-data-container .botones .calcular {
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+main .illustration-data-container .botones .calcular:hover {
+    transform: scale(1.3);
 }
 
 main .illustration-data-container .botones .refresh {
@@ -253,17 +257,17 @@ main .illustration-data-container .botones .refresh {
 
 
 .illustration-result-container .illustration-result .angulo-a {
-    left: -2.5rem;
+    left: -6rem;
     bottom: 0rem;
 }
 
 .illustration-result-container .illustration-result .angulo-b {
-    right: -2rem;
+    right: -5rem;
     bottom: 0rem;
 }
 
 .illustration-result-container .illustration-result .angulo-c {
-    left: 7rem;
+    left: 5rem;
     top: -2rem;
 }
 
@@ -273,12 +277,12 @@ main .illustration-data-container .botones .refresh {
 }
 
 .illustration-result-container .illustration-result .cateto-b {
-    left: 1.5rem;
+    left: -2rem;
     bottom: 5.5rem;
 }
 
 .illustration-result-container .illustration-result .cateto-c {
-    left: 11.5rem;
+    left: 10rem;
     bottom: -2rem;
 }
 
